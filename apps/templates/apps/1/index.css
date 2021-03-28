@@ -1,0 +1,22 @@
+.my-container {
+  height: 100%;
+  width: 100%;
+}
+
+.drum-container {
+  height: 100%;
+  width: 100%;
+}
+
+.drum-btn {
+  height: 8vh;
+  width: 8vh;
+  text-align: center;
+  border: 1px solid black
+}
+
+.drum-kind {
+  color: blue;
+  position: relative;
+  bottom: 1.5vh;
+}

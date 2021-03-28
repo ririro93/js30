@@ -1,0 +1,11 @@
+<a class="text-decoration-none text-dark"href="{% url 'apps:detail' pk=app.pk %}">
+  <div class="card">
+    <img src="{{ app.image.url }}" class="card-img-top" alt="{{ app.image }}">
+    <div class="card-body">
+      <h5 class="card-title">#{{ app.number }} : {{ app.title }}</h5>
+      <p class="card-text">{{ app.overview }}</p>
+      <a class="btn btn-success" href="{% url 'apps:update' pk=app.pk %}">update</a>
+      <a class="btn btn-warning" href="{% url 'apps:delete' pk=app.pk %}">delete</a>
+    </div>
+  </div>
+</a>

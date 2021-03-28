@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static '1/index.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="my-container container">
+  <div class="row drum-container align-items-center">
+    <div class="drum-btn-container col-1 offset-1">
+      <div class="drum-btn">
+        <p>a</p>
+        <h3 class="drum-kind">a</h3>
+      </div>
+    </div>
+    <div class="drum-btn-container col-1">
+      <div class="drum-btn">
+        <p>s</p>
+        <h3 class="drum-kind">s</h3>
+      </div>
+    </div>
+    <div class="drum-btn-container col-1">
+      <div class="drum-btn">
+        <p>d</p>
+        <h3 class="drum-kind">d</h3>
+      </div>
+    </div>
+    <div class="drum-btn-container col-1">
+      <div class="drum-btn">
+        <p>f</p>
+        <h3 class="drum-kind">f</h3>
+      </div>
+    </div>
+    <div class="drum-btn-container col-1">
+      <div class="drum-btn">
+        <p>g</p>
+        <h3 class="drum-kind">g</h3>
+      </div>
+    </div>
+    <div class="drum-btn-container col-1">
+      <div class="drum-btn">
+        <p>h</p>
+        <h3 class="drum-kind">h</h3>
+      </div>
+    </div>
+    <div class="drum-btn-container col-1">
+      <div class="drum-btn">
+        <p>j</p>
+        <h3 class="drum-kind">j</h3>
+      </div>
+    </div>
+    <div class="drum-btn-container col-1">
+      <div class="drum-btn">
+        <p>k</p>
+        <h3 class="drum-kind">k</h3>
+      </div>
+    </div>
+    <div class="drum-btn-container col-1">
+      <div class="drum-btn">
+        <p>l</p>
+        <h3 class="drum-kind">l</h3>
+      </div>
+    </div>
+    <div class="drum-btn-container col-1">
+      <div class="drum-btn">
+        <p>;</p>
+        <h3 class="drum-kind">;</h3>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block js %}
+<script>
+const drumContainer = document.querySelector(".drum-container");
+
+console.log(drumContainer);
+
+</script>
+{% endblock %}
